@@ -1,0 +1,7 @@
+{
+	"extends": "../../tslint.json",
+	"rules": {
+		"directive-selector": [true, "attribute", "<%= camelize(name) %>", "camelCase"],
+		"component-selector": [true, "element", "<%= dasherize(name) %>", "kebab-case"]
+	}
+}

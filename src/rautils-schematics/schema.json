@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/schema",
+	"id": "RautilitySchematics",
+	"title": "Rautility Options Schema",
+	"type": "object",
+	"description": "Generates a new Rautils' library.",
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "The name of the library",
+			"$default": {
+				"$source": "argv",
+				"index": 0
+			},
+			"x-prompt": "What's the name of the library?"
+		},
+		"forceNgxPrefix": {
+			"type": "boolean",
+			"description": "Whether ngx should be a prefix or not",
+			"default": "true"
+		},
+		"organization": {
+			"type": "string",
+			"description": "NPM organization name",
+			"default": "rautils"
+		}
+	},
+	"required": [
+		"name"
+	]
+}

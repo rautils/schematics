@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "rautility": {
+      "description": "Generates a new Rautils' library.",
+      "factory": "./rautils-schematics/index#rautility",
+      "schema": "./rautils-schematics/schema.json"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+	"name": "@<%= organization %>/<%= dasherize(name) %>",
+	"version": "0.0.0",
+	"homepage": "https://github.com/rautils/rautils/tree/master/projects/<%= dasherize(name) %>",
+	"license": "MIT",
+	"keywords": [
+		"angular",
+		"angular 2",
+		"ng",
+		"ngx",
+		"rautils",
+		"utility",
+		"<%= dasherize(name) %>"
+	],
+	"author": {
+		"name": "Raúl IP",
+		"url": "https://github.com/RaulPROP"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rautils/rautils.git",
+		"directory": "projects/<%= dasherize(name) %>"
+	},
+	"bugs": {
+		"url": "https://github.com/rautils/rautils/issues"
+	},
+	"peerDependencies": {
+		"@angular/common": "^9.1.1",
+		"@angular/core": "^9.1.1",
+		"tslib": "^1.10.0"
+	}
+}
