@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - name: build
-        run: npm run build
+      - name: install & build
+        run: npm i && npm run build
       - name: Publish
         run: npm publish
         env:
@@ -33,8 +33,8 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@rautils'
-      - name: build
-        run: npm run build
+      - name: install & build
+        run: npm i && npm run build
       - name: Publish
         run: npm publish
         env:
