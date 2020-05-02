@@ -1,6 +1,6 @@
 {
 	"name": "@rautils/schematics",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Generates a library for rautils",
 	"scripts": {
 		"build": "tsc -p tsconfig.json",

@@ -19,8 +19,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: install & build
         run: npm i && npm run build
-      - name: pre-publish
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: publish
         run: npm publish
         env:
